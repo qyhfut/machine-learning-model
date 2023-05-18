@@ -26,7 +26,7 @@ data = pd.read_csv(r"ldampnet_vector_1357.csv")
 
 
 # 模型输入
-# X = data.iloc[:,0:778] #LDA-MPNet特征
+X = data.iloc[:,0:778] #LDA-MPNet特征
 
 y = data.iloc[:,-1]
 print(X)

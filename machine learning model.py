@@ -21,23 +21,12 @@ import lightgbm as gbm
 from sklearn.neural_network import MLPClassifier
 
 
-data = pd.read_csv(r"ldampnet_vector3.csv")
+data = pd.read_csv(r"ldampnet_vector_1357.csv")
 
 
 
 # 模型输入
-# X = data.iloc[:,0:10] #LDA特征
-
-# X = data.iloc[:,10:778] #MPNet特征
-
-X = data.iloc[:,778:781] #sentiment特征
-
-
 # X = data.iloc[:,0:778] #LDA-MPNet特征
-
-
-# X = data.iloc[:,0:781] #LDA-MPNet-sentiment特征
-
 
 y = data.iloc[:,-1]
 print(X)
